@@ -1,5 +1,5 @@
 -- Estimated Yield Calculation
--- Calculates box areas, average sample yield per m², scales to full plot size
+-- Calculates box areas, average sample yield per m², scales to per Acre of land
 
 SELECT 
   Year,
