@@ -49,7 +49,8 @@ maize-yield-insights/
 ├── scripts/
 │   └── json_csv_etl.py         # Python script for JSON-to-CSV conversion
 ├── dashboards/
-│   └── blueprint.md            # Text-based design for dashboard modules
+│   └── 📐 [Dashboard Design Blueprint](dashboards/blueprint.md)
+            # Text-based design for dashboard modules
 ├── notebooks/
 │   └── exploratory_analysis.ipynb  # EDA and visual experiments
 ├── assets/
