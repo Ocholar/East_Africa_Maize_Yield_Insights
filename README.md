@@ -32,10 +32,13 @@
 | TabLab             | JSON to CSV conversion               |
 | GitHub             | Version control & publishing         |
 
-## 🚀 Status
-- ✅ Flattened & extracted 10,001 metadata files so far
-- ⏳ STAC file processing underway
-- 🔜 Next Steps: Merge CSVs → SQLite import → Query design
+## 🚀 Progress Snapshot
+
+- ✅ Flattened & parsed 10,001 metadata files  
+- ✅ STAC metadata ingested and merged  
+- ✅ SQLite database structured and populated  
+- 🔎 Field-level query design underway (`estimated_yield.sql`)  
+- 📊 Dashboard blueprint drafted
 
 ## 📁 Repo Structure
 ```
