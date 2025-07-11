@@ -38,7 +38,25 @@
 - 🔜 Next Steps: Merge CSVs → SQLite import → Query design
 
 ## 📁 Repo Structure
-*Coming soon: Overview of folder organization and SQLite schema screenshots.*
+```
+## 📂 Folder Structure
+
+```
+maize-yield-insights/
+├── data/
+│   ├── raw/                     # Original JSON files
+│   └── processed/              # Cleaned CSV outputs
+├── scripts/
+│   └── json_csv_etl.py         # Python script for JSON-to-CSV conversion
+├── dashboards/
+│   └── blueprint.md            # Text-based design for dashboard modules
+├── notebooks/
+│   └── exploratory_analysis.ipynb  # EDA and visual experiments
+├── assets/
+│   └── images/                 # Screenshots of dashboards/mockups
+└── README.md                   # Project overview and usage instructions
+```
+
 
 ## 🎓 What I Learned
 - Efficiently parsed semi-structured JSON data using Excel Power Query
