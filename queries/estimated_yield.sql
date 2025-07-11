@@ -23,7 +23,5 @@ SELECT
 FROM yield_metadata
 WHERE 
   BoxAWidth > 0 AND BoxALength > 0 AND 
-  BoxBWidth > 0 AND BoxBLength > 0 AND 
-  BoxADryWeight IS NOT NULL AND 
-  BoxBDryWeight IS NOT NULL
+  BoxBWidth > 0 AND BoxBLength > 0
 ORDER BY EstimatedYieldKG DESC;
