@@ -10,12 +10,30 @@
   - `metadata.json`: Agronomic details (yield weights, plot size, fertilizer use, GPS)
   - `stac.json`: Satellite image metadata (timestamps, bounding box, sensor info)
 
-## 🔍 Fields Extracted
-- `Year`, `Season`, `Country`
-- `Latitude`, `Longitude`, `PlotSize_acres`
-- `BoxADryWeight`, `BoxBDryWeight`
-- Fertilizer inputs: CAN, DAP, NPK, Urea
-- Image timestamps: e.g. `jun17.png`, `dec18.png`
+## 🧾 Fields Extracted
+
+- `Year`  
+- `Season`  
+- `Country`  
+- `Longitude`  
+- `Latitude`  
+- `BoxAWidth`  
+- `BoxALength`  
+- `BoxBWidth`  
+- `BoxBLength`  
+- `BoxAWetWeight`  
+- `BoxADryWeight`  
+- `BoxBWetWeight`  
+- `BoxBDryWeight`  
+- `PlotSize_Acres`  
+- `Variety`  
+- `Planting Date`  
+- `CAN_Kgs`  
+- `DAP_Kgs`  
+- `NPK_Kgs`  
+- `Urea_Kgs`  
+- `ImgID`
+
 
 ## 📊 Project Goals
 - Build a unified SQLite database with field-level agronomic data
