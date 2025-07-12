@@ -1,6 +1,27 @@
-# 🌾 Maize Yield Insights — Field-Level Agronomic Data in East Africa
+# 🌾 East Africa Maize Yield Insights
 
-> This project surfaces field-level yield dynamics across East Africa, leveraging structured agronomic metadata and satellite imagery to identify spatial and seasonal performance trends—delivered through a reproducible, code-free data pipeline.
+This project visualizes maize yield performance across East African trials using field-calibrated agronomic methods, Python, SQL, and Power BI. It combines raw plot measurements with seasonality, regional comparisons, and variety-level analysis — delivering actionable dashboards for decision-makers in agricultural development.
+
+---
+
+## 📦 Repository Structure
+
+```text
+modules/
+└── yield-performance-module/
+    ├── data/                        # Cleaned dataset for analysis
+    │   └── yield_metadata_cleaned.csv
+    ├── exports/                     # Aggregated SQL output files
+    │   └── yearly_avg_yield_by_country.csv
+    ├── dashboards/
+    │   ├── final_dashboard.pbix     # Power BI dashboard
+    │   └── visual_snapshots/
+    │       └── yield_dashboard_snapshot.pdf
+    ├── SQL/                         # Raw and aggregated query logic
+    │   └── top_yielding_country_per_year.sql
+    └── docs/
+        └── methodology.md           # Cleaning, estimation, and logic docs
+
 
 ## 📦 Dataset Overview
 - **Source**: [Lacuna Fund Agriculture Datasets](https://lacunafund.org/datasets/agriculture/)
@@ -41,14 +62,11 @@
 - Pair dry weight measurements with imagery metadata to explore spatial correlations
 - Showcase technical data wrangling using non-code tools (Excel + Power Query)
 
-## 🛠️ Tools Used
+## 🛠️ Methodology Summary
 
-| Tool               | Purpose                              |
-|--------------------|--------------------------------------|
-| Excel Power Query  | Batch JSON parsing & CSV creation    |
-| DB Browser SQLite  | Data querying and structuring        |
-| TabLab             | JSON to CSV conversion               |
-| GitHub             | Version control & publishing         |
+((BoxADryWeight / (BoxAWidth × BoxALength)) + 
+ (BoxBDryWeight / (BoxBWidth × BoxBLength))) / 2 
+ × (PlotSize_acres × 4046.86)
 
 ## 🚀 Progress Snapshot
 
@@ -57,28 +75,11 @@
 - ✅ SQLite database structured and populated  
 - 🔎 Field-level query design underway (`estimated_yield.sql`)  
 - 📊 Dashboard blueprint drafted
-
-## 📁 Repo Structure
-```
-## 📂 Folder Structure
-
-```
-maize-yield-insights/
-├── data/
-│   ├── raw/                     # Original JSON files
-│   └── processed/              # Cleaned CSV outputs
-├── scripts/
-│   └── json_csv_etl.py         # Python script for JSON-to-CSV conversion
-├── dashboards/
-│   └── 📐 [Dashboard Design Blueprint](dashboards/blueprint.md)
-            # Text-based design for dashboard modules
-├── notebooks/
-│   └── exploratory_analysis.ipynb  # EDA and visual experiments
-├── assets/
-│   └── images/                 # Screenshots of dashboards/mockups
-└── README.md                   # Project overview and usage instructions
-```
-
+- 🌍 Regional yield comparisons by year and season
+- 🌧️ Seasonal performance overlay using SOP calculations
+- 🌱 Variety performance ranked by field-trial averages
+- 📊 Cleaned, minimal datasets for efficient dashboard rendering
+- 📎 Exported Power BI snapshot available for preview
 
 ## 🎓 What I Learned
 - Efficiently parsed semi-structured JSON data using Excel Power Query
@@ -86,8 +87,7 @@ maize-yield-insights/
 - Developed relational database for spatial agronomic analysis
 - Explored crop yield trends through structured metadata and remote sensing timestamps
 
-## 📬 Let’s Connect
-For questions, collaborations, or feedback, feel free to connect via [LinkedIn](https://www.linkedin.com/in/reagan-ochola-aba10927/) or raise an issue in this repository.
-
+👨🏾‍🌾 Author
+Reagan Ochola  Data Analyst | Field Supervisor passionate about agronomic analytics, geospatial storytelling, and dashboard design for humanitarian development.[LinkedIn](https://www.linkedin.com/in/reagan-ochola-aba10927/) 
 ---
 Made with curiosity, grit, and thousands of folders 🗂️
