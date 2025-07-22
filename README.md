@@ -22,6 +22,7 @@ modules/
     └── docs/
         └── methodology.md           # Cleaning, estimation, and logic docs
 
+---
 
 ## 📦 Dataset Overview
 - **Source**: [Lacuna Fund Agriculture Datasets](https://lacunafund.org/datasets/agriculture/)
@@ -30,6 +31,8 @@ modules/
 - **Files Processed**: 18,482 folders, each containing:
   - `metadata.json`: Agronomic details (yield weights, plot size, fertilizer use, GPS)
   - `stac.json`: Satellite image metadata (timestamps, bounding box, sensor info)
+
+---
 
 ## 🧾 Fields Extracted
 
@@ -55,6 +58,7 @@ modules/
 - `Urea_Kgs`  
 - `ImgID`
 
+---
 
 ## 📊 Project Goals
 - Build a unified SQLite database with field-level agronomic data
@@ -62,11 +66,15 @@ modules/
 - Pair dry weight measurements with imagery metadata to explore spatial correlations
 - Showcase technical data wrangling using non-code tools (Excel + Power Query)
 
+---
+
 ## 🛠️ Methodology Summary
 
 ((BoxADryWeight / (BoxAWidth × BoxALength)) + 
  (BoxBDryWeight / (BoxBWidth × BoxBLength))) / 2 
  × (PlotSize_acres × 4046.86)
+
+---
 
 ## 🚀 Progress Snapshot
 
@@ -81,13 +89,19 @@ modules/
 - 📊 Cleaned, minimal datasets for efficient dashboard rendering
 - 📎 Exported Power BI snapshot available for preview
 
+---
+
 ## 🎓 What I Learned
 - Efficiently parsed semi-structured JSON data using Excel Power Query
 - Designed reproducible ETL logic without code
 - Developed relational database for spatial agronomic analysis
 - Explored crop yield trends through structured metadata and remote sensing timestamps
 
+---
+
 👨🏾‍🌾 Author
 Reagan Ochola  Data Analyst | Field Supervisor passionate about agronomic analytics, geospatial storytelling, and dashboard design for humanitarian development.[LinkedIn](https://www.linkedin.com/in/reagan-ochola-aba10927/) 
+
 ---
+
 Made with curiosity, grit, and thousands of folders 🗂️
